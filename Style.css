@@ -1,0 +1,199 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background-color: #222;
+}
+::-webkit-scrollbar-thumb{
+    background-color: #39d0cb;
+    border-radius: 5px;
+}
+
+/* navbar */
+/* #F5F5F5 light
+#48CFCB light font
+#229799 dark-font
+#424242 dark
+*/
+nav {
+    z-index: 1000;
+    background: #222;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    text-decoration: none;
+    border: 1px solid  #39d0cb;
+    margin: 9px;
+    padding: 2px 15px;
+    border-radius: 25px;
+    background-color: rgba(72, 207, 203, 0.055);
+    font-weight: 700;
+    color: #39d0cb;
+     font-size: 17px;
+    transition: all 0.3s ease-in-out;
+} 
+
+ .item:hover {
+    border: 1px solid rgba(148, 210, 208, 0.3);
+    color: #FFD700;
+    box-shadow: 0px 0px 5px 2px #FFD700;
+} 
+
+.collapse-menu {
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.toggler-btn {
+    position: absolute;
+    right: 5px;
+    top: 15px;
+    border: none;
+    background: none;
+    font-size: 24px;
+    transition: all 0.3s ease-in-out;
+    z-index: 100;
+}
+
+i{
+    color: #cfc848;
+}
+
+/* home section */
+.home-section {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: url('https://png.pngtree.com/thumb_back/fh260/background/20240610/pngtree-computer-of-a-programmer-with-lines-code-of-software-image_15746003.jpg') no-repeat center center;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.home-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.895);
+    z-index: -1;
+}
+
+.home-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    text-align: center;
+}
+
+.home-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    color: #39d0cb;
+}
+
+.home-content h1 span {
+    color: #FFD700;
+}
+
+.home-content p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    color: #F5F5F5;
+}
+
+.home-content .btn {
+    text-decoration: none;
+    background-color: #39d0cb;
+    color: #131010;
+    padding: 0.6rem 1.9rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 25px;
+    transition: all 0.3s ease-in-out;
+}
+
+.home-content .btn:hover {
+    background-color: #FFD700;
+    color: #131010;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .home-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .home-content p {
+        font-size: 1.1rem;
+    }
+
+    .home-content .btn {
+        font-size: 1rem;
+        padding: 0.6rem 1.5rem;
+    }
+    nav{
+        display: none;
+        padding: 10px 0;
+    }
+    .item {
+        margin: 5px;
+        width: 100%;
+        text-align: center;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* footer */
+
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #00bcd4;
+    text-decoration: none;
+}

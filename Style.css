@@ -144,9 +144,14 @@ i {
 }
 
 .section-title {
-    font-size: 2rem;
-    font-weight: bold;
+    font-family: 'Arial', sans-serif;
+    font-size: 26px; 
+    font-weight: 700;
     color: #48CFCB;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    margin-top: 20px;
+    position: relative;
     margin-bottom: 20px;
     text-align: left;
 }
@@ -234,7 +239,43 @@ i {
     overflow: hidden;
 }
 
+.skill-heading{
+    font-family: 'Arial', sans-serif;
+    font-weight: 700;
+    font-size: 26px; 
+    color: #48CFCB;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.2px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    position: relative;
+}
 
+.skills-heading::after {
+    content: '';
+    display: block;
+    width: 70px; 
+    height: 3px;
+    background: #48CFCB;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+.partition {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.partition> .col-md-8{
+    flex: 0 0 60%; 
+    max-width: 60%;
+}
+
+.partition > .col-md-4 {
+    flex: 0 0 40%;
+    max-width: 40%;
+}
 
 h2 {
     font-family: 'Arial', sans-serif;
@@ -247,7 +288,7 @@ h2 {
     background: rgba(72, 207, 203, 0.159);
     border: 1px solid rgba(72, 207, 203, 0.3);
     border-radius: 10px;
-    padding: 20px;
+    padding: 30px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -312,8 +353,104 @@ h2 {
     width: 100%;
 }
 
+/* Service  */
+.service-card {
+    background: linear-gradient(135deg, rgba(72, 207, 203, 0.2), rgba(72, 207, 203, 0.05));
+    border: none;
+    border-radius: 15px;
+    padding: 30px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    position: relative;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 30px rgba(72, 207, 203, 0.5);
+}
+
+.service-card i {
+    display: block;
+    margin: 0 auto 15px;
+    color: #48CFCB;
+    background: rgba(72, 207, 203, 0.1);
+    border-radius: 50%;
+    padding: 20px;
+    width: 80px;
+    height: 80px;
+    line-height: 40px;
+    font-size: 36px;
+}
+
+.service-card h4 {
+    margin-bottom: 10px;
+    font-size: 22px;
+    font-weight: 700;
+    color: #f5f5f5;
+}
+
+.service-card p {
+    color: #f5f5f5;
+    font-size: 14px;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.service-card:before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #48CFCB, transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: -1;
+}
+
+.service-card:hover:before {
+    opacity: 1;
+}
+
+.services-heading{
+    font-family: 'Arial', sans-serif;
+    font-weight: 700; 
+    font-size: 24px; 
+    color: #48CFCB; 
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px; 
+    margin-top: 5px; 
+    position: relative;
+}
+.services-heading::after {
+    content: '';
+    display: block;
+    width: 50px; 
+    height: 3px; 
+    background: #48CFCB; 
+    margin: 10px auto 0;
+    border-radius: 2px; 
+}
+
+
 /* project section */
-/* Section Styling */
+.projects-section{
+    position: relative;
+    /* background: #131010; */
+    background: linear-gradient(135deg, #131010 45%, #161616 55%);
+    padding: 50px 0;
+    color: #f5f5f5;
+    overflow: hidden;
+}
 
 
 
@@ -324,8 +461,17 @@ h2 {
 
 
 
+.demo-link{
+    text-decoration: none;
+    background-color: #00bcd4;
+    color: #131010;
+    border-radius: 25px;
+}
 
-
+.demo-link:hover{
+    background-color: #FFD700;
+    transition: all 0.3s ease-in-out;
+}
 
 
 
@@ -376,12 +522,48 @@ footer a {
         flex: 0 0 100%;
         max-width: 100%;
     }
+
+    .services-heading {
+        font-size: 20px; 
+    }
+
+    .services-heading::after {
+        width: 40px; 
+    }
+
+    .skills-heading {
+        font-size: 22px; 
+    }
+
+    .skills-heading::after {
+        width: 60px; 
+    }
+
+    .service-card{
+        margin-left: 15px;
+        margin-right: 15px;
+
+    }
+
+    .service-card h4{
+        font-size: 22px;
+    }
+
+    .service-card p{
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 992px) {
     .col-md-3 {
         flex: 0 0 50%;
         max-width: 50%;
+    }
+    /* changed */
+    .partition> .col-md-8, 
+    .partition> .col-md-4{
+        flex: 0 0 100%;
+        max-width: 100%;
     }
 }
 

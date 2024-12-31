@@ -23,29 +23,30 @@
 
 <body>
     <div>
-        <!-- navbar -->
-        <nav class="navbar navbar-expand-lg">
-            <div class="container d-flex justify-content-center">
-                <div class="text-center">
-                    <button style="color: #FFD700;" class="navbar-toggler toggler-btn " type="button"
-                        data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
-                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fa-solid fa-bars fa-lg"></i>
-                    </button>
-                    <div class="collapse navbar-collapse collapse-menu" id="navbarNavAltMarkup">
-                        <div class="navbar-nav text-center">
-                            <a class=" active item" aria-current="page" href="#home">Home</a>
-                            <a class=" item" href="#about">About</a>
-                            <a class=" item" href="#skills">Skills</a>
-                            <a class=" item" href="#projects">Projects</a>
-                            <a class=" item" href="#contact">Contact</a>
+        <div class="container-fluid " style="padding: 0px;">
+
+            <!-- navbar -->
+            <nav class="navbar navbar-expand-lg">
+                <div class="container d-flex justify-content-center">
+                    <div class="text-center">
+                        <button style="color: #FFD700;" class="navbar-toggler toggler-btn " type="button"
+                            data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                            aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="fa-solid fa-bars fa-lg"></i>
+                        </button>
+                        <div class="collapse navbar-collapse collapse-menu" id="navbarNavAltMarkup">
+                            <div class="navbar-nav text-center">
+                                <a class=" active item" aria-current="page" href="#home">Home</a>
+                                <a class=" item" href="#about">About</a>
+                                <a class=" item" href="#skills">Skills</a>
+                                <a class=" item" href="#projects">Projects</a>
+                                <a class=" item" href="#contact">Contact</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </nav>
+            </nav>
 
-        <div class="container-fluid " style="padding: 0px;">
             <!-- home section -->
             <section id="home" class="home-section d-flex align-items-center justify-content-center">
                 <div class="home-content text-center">
@@ -245,7 +246,6 @@
                         <h2 class="section-title fw-bold text-center">MY PROJECTS</h2>
                         <p style="font-size: 17px;">Explore my projects that showcase my skills and creativity.</p>
                     </div>
-
                     <div class="project-categories">
                         <!-- Personal Projects -->
                         <div class="project-category">
@@ -281,7 +281,6 @@
                             </div>
                         </div>
                     </div>
-
                     <!-- UI/UX Design Projects -->
                     <div class="project-category">
                         <h3>UI/UX Design Projects</h3>
@@ -311,52 +310,49 @@
             </section>
 
             <!-- contact -->
-
-            <section id="contact" class="contact-section">
+            <section id="contact" class="contact-section text-light">
                 <div class="container">
                     <div class="text-center">
-                        <h2 class="section-title">GET IN TOUCH</h2>
+                        <h2 class="section-title fw-bold">GET IN TOUCH</h2>
                         <p>Feel free to reach out for inquiries or collaborations!</p>
                     </div>
 
-                    <div class="contact-options">
+                    <div class="contact-options d-flex justify-content-center">
                         <div class="contact-item">
                             <a href="https://www.linkedin.com/in/ardra-m-sivakumaran" target="_blank"
-                                class="contact-link">
-                                <i class="fab fa-linkedin"></i>
+                                class="contact-link d-flex justify-content-center align-items-center text-light">
+                                <i style="font-size: 20px;" class="fab fa-linkedin"></i>
                                 <span>LinkedIn</span>
                             </a>
                         </div>
                         <div class="contact-item">
-                            <a href="https://github.com/ardra-m-siva" target="_blank" class="contact-link">
-                                <i class="fab fa-github"></i>
+                            <a href="https://github.com/ardra-m-siva" target="_blank" class="contact-link d-flex justify-content-center align-items-center text-light">
+                                <i style="font-size: 20px;" class="fab fa-github"></i>
                                 <span>GitHub</span>
                             </a>
                         </div>
                         <div class="contact-item">
-                            <a href="mailto:ardrasivan2000@gmail.com" class="contact-link">
-                                <i class="fas fa-envelope"></i>
+                            <a href="mailto:ardrasivan2000@gmail.com" class="contact-link d-flex justify-content-center align-items-center text-light">
+                                <i style="font-size: 20px;" class="fas fa-envelope"></i>
                                 <span>Email</span>
                             </a>
                         </div>
                     </div>
                 </div>
                 <!-- Back to Top Button -->
-                <button id="back-to-top" class="back-to-top-btn">
+                <button style="color: black;" id="back-to-top" class="back-to-top-btn d-flex justify-content-center align-items-center">
                     <i class="fa-solid fa-arrow-up"></i>
                 </button>
             </section>
         </div>
-
         <!-- Footer: Add a copyright notice and any additional links or information.-->
-        <footer>
+        <footer class="text-light text-center">
             <p>&copy; 2024 ARDRA M S. All Rights Reserved.</p>
             <p style="font-size: 14px;">
                 Designed & Developed by <a href="#home">ARDRA M S</a>
             </p>
         </footer>
     </div>
-
 </body>
 <script src="./Script.js"></script>
 <!-- bootstrap -->
